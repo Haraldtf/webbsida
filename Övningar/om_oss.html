@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="webb.css" />
+    <style>
+      .menu-button {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1000;
+      }
+
+      .menu {
+        display: none;
+        position: fixed;
+        top: 60px;
+        right: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+      }
+      .menu.show {
+        display: block;
+      }
+      .menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .menu ul li {
+        border-bottom: 1px solid #ccc;
+      }
+      .menu ul li a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #333;
+      }
+      .menu ul li a:hover {
+        background-color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Om oss</h1>
+      <button class="menu-button" onclick="toggleMenu()">Meny</button>
+      <div class="menu" id="menu">
+        <ul>
+          <li><a href="webb.html">Hem</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="content">
+      <p>
+        Välkommen till Zero to Hero, din ultimata destination för
+        Overwatch-coaching och esports-utbildning! Vi är passionerade om att
+        hjälpa unga talanger och entusiaster att uppnå sina fulla potentialer
+        inom den spännande världen av Overwatch. Vi förstår att Overwatch inte
+        bara är ett spel för många – det är en passion, en dröm, och för vissa
+        till och med en potentiell karriär. Därför är vi här för att erbjuda
+        expertvägledning och stöd för dem som strävar efter att förbättra sitt
+        spel och nå nya höjder, oavsett om det är för att dominera på ladder
+        eller för att förverkliga sina drömmar att bli professionella spelare.
+        Vårt team består av erfarna och högpresterande Overwatch-coacher som
+        brinner för att dela med sig av sin kunskap och erfarenhet. Vi anpassar
+        varje coachningssession efter dina individuella behov och mål, och vi
+        strävar alltid efter att skapa en stödjande och uppmuntrande miljö där
+        du kan växa och utvecklas som spelare. Oavsett om du är en nybörjare som
+        vill lära dig grunderna eller en erfaren spelare som söker
+        finjusteringar för att ta ditt spel till nästa nivå, så är Zero to Hero
+        här för att hjälpa dig att uppnå dina mål inom Overwatch och bortom. Ta
+        det första steget mot din framgång och låt oss vara din guide på din
+        resa mot att bli den bästa spelaren du kan vara! Kontakta oss idag för
+        att börja din resa mot Overwatch-excellens!
+      </p>
+    </div>
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById("menu");
+        menu.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zero to Hero</title>
+    <link rel="stylesheet" href="webb.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Zero to Hero</h1>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="kundvagn.html">Kundvagn</a>
+            <div class="cart-dropdown">
+              <!-- Här kommer kundvagnens innehåll visas -->
+              <p>Din kundvagn är tom</p>
+            </div>
+          </li>
+          <li><a href="om_oss.html">om oss</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="windows">
+        <div class="window" id="window1">
+          <h2>Quick Fix Erbjudande -:75 kr/h</h2>
+          <p>
+            Få snabba och effektiva tips för att förbättra ditt spel på bara en
+            session. Perfekt för dig som vill ha en omedelbar boost i dina
+            Overwatch-färdigheter.
+          </p>
+          <button
+            class="add-to-cart"
+            data-product="Quick Fix Erbjudande - 75 kr/h"
+          >
+            Lägg till i kundvagn
+          </button>
+        </div>
+        <div class="window" id="window2">
+          <h2>Standard Erbjudande -:150 kr/h</h2>
+          <p>
+            En djupare analys och personlig coaching för att ta ditt spelande
+            till nästa nivå. Innehåller en timmes coaching med fokus på dina
+            specifika behov och mål.
+          </p>
+          <button
+            class="add-to-cart"
+            data-product="Standard Erbjudande - 150 kr/h"
+          >
+            Lägg till i kundvagn
+          </button>
+        </div>
+        <div class="window" id="window3">
+          <h2>In Depth Erbjudande -:300 kr/h</h2>
+          <p>
+            För den seriösa spelaren som vill fördjupa sig i avancerade
+            strategier och tekniker. Inkluderar två timmars omfattande coaching,
+            replay-analys, och en detaljerad utvecklingsplan.
+          </p>
+          <button
+            class="add-to-cart"
+            data-product="In Depth Erbjudande - 300 kr/h"
+          >
+            Lägg till i kundvagn
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="webb.js"></script>
+  </body>
+</html>
